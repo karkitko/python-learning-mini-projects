@@ -1,5 +1,7 @@
 print ("Kalulator BMI")
-print ("podaj wzrost i wagę")
+inp = input("Chcesz sprawdzić BMI? T/N:")
+if inp == "T":
+    print ("podaj wzrost i wagę")
     wzrost = float(input("wzrost:"))
     waga = float(input("waga:"))
     BMI = waga/wzrost **2
@@ -13,3 +15,7 @@ print ("podaj wzrost i wagę")
         print('10 pompek i zero cukierków.')
     elif BMI > 30:
         print('Zmieniasz się w kulkę.')
+
+elif inp == "N":
+    print ("potrafię tylko liczyć BMI")
+
